@@ -1,0 +1,129 @@
+export const formParams = [{
+  paramsName: 'formName',
+  paramsCaption: '表单名字',
+  paramsType: 'String',
+  isMust: '是',
+  default: '-'
+}, {
+  paramsName: 'showResetBtn',
+  paramsCaption: '是否显示重置按钮',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'inline',
+  paramsCaption: '表单布局方式',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'rules',
+  paramsCaption: '表单验证规则',
+  paramsType: 'Object',
+  isMust: '否',
+  default: '{}'
+}, {
+  paramsName: 'labelPosition',
+  paramsCaption: '表单对齐方式',
+  paramsType: 'String',
+  isMust: '	否',
+  default: 'right'
+}, {
+  paramsName: 'labelWidth',
+  paramsCaption: '表单字段说明宽度',
+  paramsType: 'String',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'inlineMessage',
+  paramsCaption: '是否在同一行展示验证信息',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'size',
+  paramsCaption: '表单元素尺寸',
+  paramsType: 'String',
+  isMust: '否',
+  default: 'small'
+}, {
+  paramsName: 'handleSubmit',
+  paramsCaption: '表单提交回调方法(接受表单数据对象为参数)',
+  paramsType: 'Fuction',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'forms',
+  paramsCaption: '表单元素配置对象(详情配置如下)',
+  paramsType: 'Array',
+  isMust: '是',
+  default: '[]'
+}]
+
+export const formsParams = [{
+  paramsName: 'itemType',
+  paramsCaption: '表单元素类型',
+  paramsType: 'String',
+  isMust: '否',
+  default: 'input(目前只接受4种类型 input、select、date、daterange)'
+}, {
+  paramsName: 'prop',
+  paramsCaption: '表单元素字段名',
+  paramsType: 'String',
+  isMust: '是',
+  default: ''
+}, {
+  paramsName: 'label',
+  paramsCaption: '元素说明文字',
+  paramsType: 'String',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'labelWidth',
+  paramsCaption: '元素说明文字宽度',
+  paramsType: 'String',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'itemWidth',
+  paramsCaption: '元素宽度',
+  paramsType: 'String',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'size',
+  paramsCaption: '元素尺寸',
+  paramsType: 'String',
+  isMust: '否',
+  default: '默认使用表单尺寸'
+}, {
+  paramsName: 'placeholder',
+  paramsCaption: '占位符',
+  paramsType: 'String',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'disabled',
+  paramsCaption: '是否禁用元素',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'radonly',
+  paramsCaption: '是否只读',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'options',
+  paramsCaption: '下拉框选项配置',
+  paramsType: 'Array',
+  isMust: '当类型为select时必填',
+  default: '-'
+}, {
+  paramsName: 'pickerOptions',
+  paramsCaption: '范围日期选择器快捷选择项',
+  paramsType: 'Object',
+  isMust: '否',
+  default: '只有类型为daterange时才有效果'
+}]

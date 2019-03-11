@@ -1,0 +1,99 @@
+export const tableParams = [{
+  paramsName: 'hasSelection',
+  paramsCaption: '是否显示选择框',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'hasIndex',
+  paramsCaption: '是否显示序号',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'dataSource',
+  paramsCaption: '表格数据',
+  paramsType: 'Array',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'columns',
+  paramsCaption: '表头源，具体配置参考下面',
+  paramsType: 'Array',
+  isMust: '是',
+  default: '-'
+}, {
+  paramsName: 'maxHeight',
+  paramsCaption: '表格最大高度',
+  paramsType: 'String',
+  isMust: '否',
+  default: '525'
+}, {
+  paramsName: 'stripe',
+  paramsCaption: '斑马线表格',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'border',
+  paramsCaption: '表格边框',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'size',
+  paramsCaption: '表格尺寸',
+  paramsType: 'String',
+  isMust: '否',
+  default: 'small'
+}, {
+  paramsName: 'highlightCurrentRow',
+  paramsCaption: '是否高亮当前行',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'showSummary',
+  paramsCaption: '是否显示合计',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'commitSelectionChange',
+  paramsCaption: '表格选择框变化事件(接收被选择的行的所有数据)',
+  paramsType: 'Function',
+  isMust: '否',
+  default: '-'
+}]
+
+export const columnsParams = [{
+  paramsName: 'label',
+  paramsCaption: '表头文字',
+  paramsType: 'String',
+  isMust: '是',
+  default: '-'
+}, {
+  paramsName: 'prop',
+  paramsCaption: '表格渲染数据字段',
+  paramsType: 'String',
+  isMust: '是',
+  default: '-'
+}, {
+  paramsName: 'minWidth',
+  paramsCaption: '表头最小宽度',
+  paramsType: 'String',
+  isMust: '否',
+  default: '-'
+}, {
+  paramsName: 'fixed',
+  paramsCaption: '是否固定该列',
+  paramsType: 'Boolean',
+  isMust: '否',
+  default: 'false'
+}, {
+  paramsName: 'formatter',
+  paramsCaption: '格式化数据方法',
+  paramsType: 'Function',
+  isMust: '否',
+  default: '-'
+}]
