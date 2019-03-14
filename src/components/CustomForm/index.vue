@@ -94,6 +94,7 @@
 				v-if="formOptions.showResetBtn"
 				@click.native="handleResetForm"
 			>重置</el-button>
+			<slot name="button-slot"></slot>
 		</el-form-item>
 	</el-form>
 </template>
