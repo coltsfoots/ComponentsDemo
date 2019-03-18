@@ -29,7 +29,7 @@
 				:fixed="hasFixed"
 				resizable
 			>
-				<template slot="header" slot-scope="scope">
+				<template slot="header">
 					<span>序号</span>
 				</template>
 			</el-table-column>
