@@ -57,6 +57,21 @@ export const companyAdminRouterMap = [
     component: Layout,
     children: [
       {
+        path: 'new-form',
+        name: 'new-form',
+        component: _import('form/new-form'),
+        meta: {
+          title: '新表单',
+          icon: 'form'
+        }
+      }
+    ]
+  },
+  {
+    path: '',
+    component: Layout,
+    children: [
+      {
         path: 'table',
         name: 'table',
         component: _import('table/index'),

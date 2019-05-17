@@ -96,6 +96,10 @@ export default {
 			<el-col :span="11" :xs="24" :sm="24" :lg="12">
 				<pagination
 				  :page="page4"
+          :totalPage="totalPage"
+          :pageSizes="[10, 20, 50, 100]"
+          :prevText="'上一页'"
+          :nextText="'下一页'"
 					@currentChange="currentChangeHandle"
 				></pagination>
 			</el-col>
@@ -176,13 +180,9 @@ export default {
       },
       page4: {
         pageIndex: 1,
-        pageSize: 20,
-        totalPage: 774,
-        prevText: '上一页',
-        nextText: '下一页',
-        pageSizes: [10, 20, 50, 100],
-        layout: 'sizes, prev, pager, next, jumper'
+        pageSize: 20
       },
+      totalPage: null,
       paginationParams
     }
   },
@@ -193,6 +193,11 @@ export default {
         message: `当前第${this.page4.pageIndex}页`
       })
     }
+  },
+  created() {
+    setTimeout(() => {
+      this.totalPage = 4000
+    }, 20)
   }
 }
 </script>
